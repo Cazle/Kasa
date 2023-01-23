@@ -1,15 +1,16 @@
 import '../styles/Header.css'
+import logo from '../assets/logo_kasa.png'
 
 function Header(){
 
     return(
     <nav className="kasa_nav">
         <div>
-            <h1>Kasa</h1>
+            <img src={logo} alt="logo" />
         </div>
             <div className="header_buttons">
-                <button>Accueil</button>
-                <button>A Propos</button>
+                <button className='kasa_accueil'>Accueil</button>
+                <button className='kasa_propos'>A Propos</button>
             </div>
     </nav>
     )

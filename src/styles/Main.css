@@ -1,0 +1,20 @@
+main img{
+    position: relative;
+    width: 100%;
+    height:auto;
+    margin: auto;
+    margin-top: 3%;
+    filter: brightness(85%);
+    border-radius: 35px;
+    z-index: -1;
+    
+}
+.main_banner{
+   display: flex;
+   justify-content: center;
+   margin-top: -11%;
+   font-size: 70px;
+   z-index: 1;
+   color: white;
+}
+

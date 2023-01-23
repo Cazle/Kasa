@@ -1,13 +1,13 @@
 import '../styles/App.css'
 import Header from './Header';
-import Main from './Main'
+import BannerAndCard from './BannerAndCard'
 
 function App() {
  return(
-   <body>
+   <div>
     <Header />
-    <Main />
-   </body>
+    <BannerAndCard />
+   </div>
  )
 }
 

@@ -13,15 +13,16 @@ function BannerAndCard(){
                 <img src={Banner} alt='Bannière'></img>
                 <h2 className='main_banner'>Chez vous, partout et ailleurs</h2>
             <section className='container'>
-                <article className='card_logements'>
-                {Logements.map(({ id, title }) => (
-					<h1
-						id={id}
-						title={title}
-						
-					/>
-				))}
-                </article>
+                {
+                    Logements.map(logement =>{
+                        return(
+                            <div className="card" key={logement.id}>
+                                <h3>{logement.title}</h3>
+                                <img src={logement.cover} alt='Logements'></img>
+                            </div>
+                        )
+                    })
+                }
             </section>
         </main>
     )

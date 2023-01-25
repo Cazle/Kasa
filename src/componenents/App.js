@@ -1,15 +1,20 @@
 import '../styles/App.css'
-import Header from './Header';
-import BannerAndCard from './BannerAndCard'
-import Footer from './Footer'
+import { Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home'
+import About from '../pages/About'
+import Error from '../pages/Error'
 
 function App() {
  return(
-   <div>
-    <Header />
-    <BannerAndCard />
-    <Footer />
-   </div>
+ <div> 
+ 
+ <Routes>
+    <Route path='/' element={<Home />}></Route>
+    <Route path='/about' element={<About />}></Route>
+    <Route path='*' element={<Error />}></Route>
+   </Routes>
+
+</div>
  )
 }
 

@@ -1,5 +1,6 @@
 import '../styles/Header.css'
 import logo from '../assets/logo_kasa.png'
+import { Link } from 'react-router-dom'
 
 function Header(){
 
@@ -8,9 +9,9 @@ function Header(){
         <div>
             <img src={logo} alt="logo" />
         </div>
-            <div className="header_buttons">
-                <button className='kasa_accueil'>Accueil</button>
-                <button className='kasa_propos'>A Propos</button>
+            <div>
+                <Link to= '/' className='kasa_accueil'>Accueil</Link>
+                <Link to='about'className='kasa_propos'>A Propos</Link>
             </div>
     </nav>
     )

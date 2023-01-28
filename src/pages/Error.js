@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Header from "../componenents/Header";
+import Header from "../shared/Header";
 import BodyError from '../componenents/BodyError/BodyError'
 
 

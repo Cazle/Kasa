@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Header from "../componenents/Header";
+import Header from "../shared/Header";
 import BannerAndCard from "../componenents/BannerAndCard/BannerAndCard";
-import Footer from "../componenents/Footer";
+import Footer from "../shared/Footer";
 
 class Home extends Component{
     render(){

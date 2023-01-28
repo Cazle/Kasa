@@ -1,6 +1,7 @@
 import styles from '../BannerAndCard/BannerAndCard.module.css'
 import Banner from '../../assets/banner_frontpage.png'
 import {Logements} from '../../datas/Logements'
+import { Link } from 'react-router-dom'
 
 
 function BannerAndCard(){
@@ -15,10 +16,10 @@ function BannerAndCard(){
                 {
                     Logements.map(logement =>{
                         return(
-                            <article className={styles.card} key={logement.id}>
+                            <Link to ={`/logements/${logement.id}`} className={styles.card} key={logement.id}>
                                 <h3>{logement.title}</h3>
                                 <img src={logement.cover} alt='Logements'></img>
-                            </article>
+                            </Link>
                         )
                     })
                 }

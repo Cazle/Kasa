@@ -11,7 +11,7 @@ function Header(){
         </div>
             <div>
                 <Link to= '/' className='kasa_accueil'>Accueil</Link>
-                <Link to='about'className='kasa_propos'>A Propos</Link>
+                <Link to='/about'className='kasa_propos'>A Propos</Link>
             </div>
     </nav>
     )

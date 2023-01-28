@@ -1,37 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 main img{
     position: relative;
     width: 100%;
-    height:auto;
-    margin: auto;
-    margin-top: 3%;
-    filter: brightness(85%);
-    border-radius: 35px;
+    height:223px;
+    margin-top: 2%;
+    filter: brightness(75%);
+    border-radius: 25px;
     z-index: -1;
     
 }
 .main_banner{
    display: flex;
    justify-content: center;
-   margin-top: -11%;
-   font-size: 60px;
+   margin-top: -130px;
+   font-weight: 500;
+   font-size: 48px;
    z-index: 1;
    color: white;
+   font-family: 'Montserrat';
 }
 
 .container{
    width: 100%;
    display: flex;
    flex-wrap: wrap;
-   margin-top: 10%;
+   margin-top: 8%;
    background-color: #F6F6F6;
    border-radius: 20px;
     
 }
 .card img{
     display: flex;
-    width:  90%;
+    width:  100%;
     z-index: 1;
-    height: 300px;
+    height: 340px;
     object-fit: cover;
     filter: brightness(75%);
 }
@@ -42,15 +45,15 @@ main img{
 
 }
 .card h3{
+    font-family: 'Montserrat';
     display: flex;
-    justify-content: flex-start;
-    font-size: 19px;
+    font-size: 18px;
     position: absolute;
     z-index: 2;
-    left: 10%;
+    left: 8%;
     top: 70%;
     width: 60%;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
 
 }

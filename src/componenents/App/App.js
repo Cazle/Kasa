@@ -1,12 +1,12 @@
-import '../styles/App.css'
+import styles from './App.module.css'
 import { Route, Routes } from 'react-router-dom';
-import Home from '../pages/Home'
-import About from '../pages/About'
-import Error from '../pages/Error'
+import Home from '../../pages/Home'
+import About from '../../pages/About'
+import Error from '../../pages/Error'
 
 function App() {
  return(
- <div> 
+ <div className={styles.div}> 
  
  <Routes>
     <Route path='/' element={<Home />}></Route>

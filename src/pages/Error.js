@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Header from "../componenents/Header";
-import BodyError from '../componenents/BodyError'
+import BodyError from '../componenents/BodyError/BodyError'
 
 
 class Error extends Component{

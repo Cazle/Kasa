@@ -9,7 +9,7 @@ function Logement(slides){
 
         const { id } = useParams();
         const pageLogement = Logements.find((logement) => logement.id === id)
-        console.log(pageLogement)
+        
 
        
 
@@ -19,7 +19,7 @@ function Logement(slides){
             <div>
                 <Header />
                 <Carousel slides={pageLogement.pictures} />
-                <div className='title'>{pageLogement.title}</div>
+                
             </div>
         )
     

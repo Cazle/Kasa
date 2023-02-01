@@ -19,15 +19,34 @@ function Carousel ({slides}){
         const newIndex = isLastSlide ? 0 : currentImage +1;
         setCurrentImage(newIndex)
     }
+    
+   const nonVisible = { 
+    color : 'transparent',
+    cursor : 'default'
+   }
+   const visible = {
+    color : 'white'
+   }
 
     return(
     <div className={styles.container_carousel} key={Logements.id}>
-        <div className={styles.leftArrow} onClick={goToPrevious}><FaChevronLeft /></div>
-        <div className={styles.rightArrow} onClick={goToNext}><FaChevronRight /></div>
+
+        <div className={styles.leftArrow} style ={slides.length > 1 ?  visible : nonVisible } onClick={goToPrevious}>
+            <FaChevronLeft />
+        </div>
+
+        <div className={styles.rightArrow} style ={slides.length > 1 ?  visible : nonVisible } onClick={goToNext}>
+            <FaChevronRight />
+        </div>
         <img className={styles.carousel_image} src={slides[currentImage]} alt='' ></img>
-        <span className={styles.index_slide}>{currentImage +1}/{slides.length}</span>
+
+        <div className={styles.index_slide} style ={slides.length > 1 ?  visible : nonVisible }>
+            <span >{currentImage +1}/{slides.length}</span>
+        </div>
+        
     </div>
     ) 
 }
+
 
 export default Carousel;

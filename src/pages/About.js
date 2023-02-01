@@ -2,7 +2,6 @@ import { Component } from 'react'
 import Header from '../shared/Header'
 import Footer from '../shared/Footer'
 import BannerAbout from '../componenents/Banner_About/Banner_About'
-
 import Collapse from '../componenents/Collapse/Collapse'
 import datas_about from '../datas/About_datas'
 

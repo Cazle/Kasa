@@ -1,15 +1,28 @@
+import Header from '../shared/Header'
+import { useParams } from "react-router-dom";
 import { Logements } from "../datas/Logements";
-import { Component } from "react";
+import Carousel from '../componenents/Carousel/Carousel';
 
-console.log(Logements)
-class Logement extends Component{
-    render(){
+
+function Logement(slides){
+    
+
+        const { id } = useParams();
+        const pageLogement = Logements.find((logement) => logement.id === id)
+        console.log(pageLogement)
+
+       
+
         return(
+            
+            
             <div>
-                Page logement
+                <Header />
+                <Carousel slides={pageLogement.pictures} />
+                <div className='title'>{pageLogement.title}</div>
             </div>
         )
-    }
+    
         
 }
 

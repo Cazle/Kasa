@@ -1,5 +1,9 @@
+html{
+    overflow-y: scroll;
+}
+
 .div{
     width: 100%;
     margin: auto;
-    max-width: 1600px;
+    max-width: 1440px;
 }

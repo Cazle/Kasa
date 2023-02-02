@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from '../Collapse/Collapse.module.css'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
-const Collapse = ({title, description}) =>{
+const Collapse = ({title, description, equipements}) =>{
 
     const [collapse, setCollapse] = useState(false)
     const toggleCollapse = () => setCollapse((prevExpend) => !prevExpend)

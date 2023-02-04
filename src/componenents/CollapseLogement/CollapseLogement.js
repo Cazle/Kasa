@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from '../Collapse/Collapse.module.css'
+import styles from '../CollapseLogement/CollapseLogement.module.css'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
-const Collapse = ({title, description}) =>{
+const CollapseLogement = ({title, description}) =>{
 
     const [collapse, setCollapse] = useState(false)
     const toggleCollapse = () => setCollapse((prevExpend) => !prevExpend)
@@ -22,4 +22,4 @@ const Collapse = ({title, description}) =>{
     )
 }
 
-export default Collapse;
+export default CollapseLogement;

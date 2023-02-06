@@ -14,10 +14,11 @@
 .box_tag_rating{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
+    position: relative;
 }
 .title_location{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -27,11 +28,33 @@
     color: #FF6060;
     font-family: 'Montserrat';
     font-weight: 500;
-    margin: 3% 0 1% 0;
+    margin: 2% 0 1% 0;
 }
 .title_location span{
     font-size: 18px;
     color: #FF6060;
     font-family: 'Montserrat';
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+}
+
+.picture_rating{
+    display: flex;
+    margin-top: 2%;
+    
+}
+
+.picture_rating h2{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    text-align: right;
+    font-weight: 500;
+    color: #FF6060;
+    margin-right: 0.5%;
+}
+
+.picture_rating img{
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    margin-left: 5%;
 }

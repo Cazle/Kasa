@@ -5,6 +5,7 @@ import { Logements } from "../datas/Logements";
 import Carousel from '../componenents/Carousel/Carousel';
 import CollapseLogement from '../componenents/CollapseLogement/CollapseLogement';
 import Tags from '../componenents/Tags/Tags'
+import Ratings from '../componenents/Ratings/Ratings';
 import '../styles/Logements.css'
 
 
@@ -33,7 +34,9 @@ function Logement(){
                     <div className='picture_rating'>
                         <h2>{pageLogement.host.name}</h2> 
                         <img src={pageLogement.host.picture} alt=''></img>
-                    </div>
+                        <Ratings rating={pageLogement.rating} />
+                        </div>
+                    
                 </div>
                 <div className='box_collapse'>
                     <div className='collapse_description'>

@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: black;
     height: 170px;
+    margin-top: 5%;
 }
 .footer_kasa img{
     width: 120px;

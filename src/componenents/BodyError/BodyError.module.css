@@ -26,3 +26,13 @@
     font-family: 'Montserrat';
     color: #FF6060;
 }
+
+@media (max-width: 992px){
+    .kasa_error h1{
+        font-size: 200px;
+    }
+
+    .kasa_error p{
+        font-size: 26px;
+    }
+}

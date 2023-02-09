@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 article{
-    margin-top: 3%;
-    width: 100%;
+    margin: 4% auto 4% auto;
+    width: 80%;
 }
 .collapse{
     display: flex;
@@ -13,7 +13,7 @@ article{
 }
 .collapse button{
     font-family: 'Montserrat';
-    width: 80%;
+    width: 100%;
     border: none;
     padding: 0 1% 0 1%;
     height: 47px;
@@ -29,7 +29,7 @@ article{
     background-color: #f66060;
 }
 .content{
-    width: 75%;
+    width: 95%;
     height: auto;
     padding: 2% 2% 2% 3%;
     background-color: #F6F6F6;

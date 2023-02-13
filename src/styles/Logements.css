@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
-article{
+.box_collapse{
+    display: flex;
     width: 100%;
 }
-.box_collapse {
-    display: flex;
-
-}
 .collapse_description{
-    width: 48%;
-    margin-right: 5%;
+width: 50%;
+}
+.collapse_description div{
+    font-size: 16px;
 }
 .collapse_equipement{
-    width: 48%;
+width: 50%;
 }
+.collapse_equipement div{
+    font-size: 16px;
+}
+
 .box_tag_rating{
     display: flex;
     justify-content: space-between;
     width: auto;
     position: relative;
+    margin-bottom: 3%;
 }
 .title_location{
     width: 100%;
@@ -28,7 +31,7 @@ article{
 }
 .title_location h1{
     font-size: 36px;
-    width: 80%;
+    width: 70%;
     color: #FF6060;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -62,9 +65,16 @@ article{
     height: 64px;
     margin-left: 5%;
 }
+@media (max-width:992px){
+    .title_location h1{
+    font-size: 30px;
+}
+}
+
 
 @media (max-width:768px){
     .box_collapse {
+        margin-top: 5%;
         display: inline;
     }
     .title_location h1{
@@ -98,12 +108,12 @@ article{
         position: absolute;
         text-align: right;
         right: 55px;
-        width: 18%;
+        width: 12%;
         font-size: 12px;
     }
 }
 @media (max-width:500px){
     .picture_rating h2{
-        width: 25%;
+        width: 15%;
     }
 }

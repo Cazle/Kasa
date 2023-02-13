@@ -1,11 +1,10 @@
-import Header from '../shared/Header'
 import Error from '../pages/Error';
 import { useParams, Navigate } from "react-router-dom";
 import { Logements } from "../datas/Logements";
 import Carousel from '../componenents/Carousel/Carousel';
 import HouseDescription from '../componenents/HouseDescription/HouseDescription';
 import '../styles/Logements.css'    
-import CollapseLogement from '../componenents/CollapseLogement/CollapseLogement';
+import Collapse from '../componenents/Collapse/Collapse';
 
 
 
@@ -20,17 +19,16 @@ function Logement(){
            pageLogement ?
             
             <div>
-                <Header />
                 <Carousel slides={pageLogement.pictures} />
                 <HouseDescription />
                 <div className='box_collapse'>
                     <div className='collapse_description'>
-                        <CollapseLogement
-                        title ='Description' 
+                        <Collapse
+                        title ='Description'
                         description={pageLogement.description} />
                     </div>
                     <div className='collapse_equipement'>
-                        <CollapseLogement
+                        <Collapse
                         title='Equipements' 
                         description={pageLogement.equipments.map((equipment, index) =>{
                             return <li style={{listStyleType :'none'}} key={index}>{equipment}</li>

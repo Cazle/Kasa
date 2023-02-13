@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-article{
+.divCollapse{
     margin: 4% auto 4% auto;
+    width: 90%;
 }
 .collapse{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2%;
+    margin-top: 2%;
     color: #f66060;
 }
-.collapse button{
+.button_style{
     font-family: 'Montserrat';
-    width: 80%;
+    width: 100%;
     border: none;
     padding: 0 1% 0 1%;
     height: 47px;
@@ -22,15 +24,12 @@ article{
     color: white;
     font-size: 24px;
     border-radius: 5px;
-}
-
-.button_style{
     background-color: #f66060;
 }
 .content{
-    width: 75%;
     height: auto;
-    padding: 2% 2% 2% 3%;
+    width: 96%;
+    padding: 2%;
     background-color: #F6F6F6;
     border-radius: 5px;
     font-size: 24px;
@@ -40,25 +39,26 @@ article{
 }
 
 @media (max-width: 992px){
-    .collapse{
-        margin-bottom: 5%;
-    }
-    .collapse button{
-        width: 90%;
-    }
-    .content{
-        width: 85%;
-    }
+   .divCollapse{
+    width: 80%;
+   }
+   .content{
+    font-size: 16px;
+}
+  .collapse button{
+    font-size: 17px;
+}
 }
 @media (max-width: 768px){
-    .collapse{
-        margin-bottom: 7%;
-    }
-    .collapse button{
-        width: 100%;
+    .divCollapse{
+        width: 85%;
     }
     .content{
-        width: 95%;
+        font-size: 12px;
+    }
+    .collapse button{
+        font-size: 13px;
+        height: 30px;
     }
 }
 

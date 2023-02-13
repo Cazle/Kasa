@@ -62,3 +62,48 @@ article{
     height: 64px;
     margin-left: 5%;
 }
+
+@media (max-width:768px){
+    .box_collapse {
+        display: inline;
+    }
+    .title_location h1{
+        font-size: 18px;
+    }
+    .title_location span{
+        font-size: 14px;
+    }
+    .collapse_description{
+        width: 100%;
+        margin-bottom: 7%;
+    }
+    .collapse_equipement{
+        
+        width: 100%;
+    }
+    .box_tag_rating{
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+    .picture_rating{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .picture_rating img{
+        width: 42px;
+        height: 42px;
+        
+    }
+    .picture_rating h2{
+        position: absolute;
+        text-align: right;
+        right: 55px;
+        width: 18%;
+        font-size: 12px;
+    }
+}
+@media (max-width:500px){
+    .picture_rating h2{
+        width: 25%;
+    }
+}

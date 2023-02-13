@@ -4,7 +4,6 @@ import { useParams, Navigate } from "react-router-dom";
 import { Logements } from "../datas/Logements";
 import Carousel from '../componenents/Carousel/Carousel';
 import HouseDescription from '../componenents/HouseDescription/HouseDescription';
-
 import '../styles/Logements.css'    
 import CollapseLogement from '../componenents/CollapseLogement/CollapseLogement';
 

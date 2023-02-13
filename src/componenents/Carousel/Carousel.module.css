@@ -42,3 +42,20 @@
     object-fit: cover;
     margin-top: 2%;
 }
+
+@media (max-width: 992px){
+    .leftArrow{
+        font-size: 60px;
+    }
+    .rightArrow{
+        font-size: 60px;
+    }
+}
+@media (max-width: 768px){
+    .leftArrow{
+        font-size: 45px;
+    }
+    .rightArrow{
+        font-size: 45px;
+    }
+}

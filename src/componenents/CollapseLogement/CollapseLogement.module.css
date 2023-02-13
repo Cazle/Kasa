@@ -40,6 +40,11 @@
     letter-spacing: 0.5px;
     line-height: 143%;
 }
+@media (max-width: 768px) {
+    .collapse button{
+        height: 40px;
+    }
+}
 
 
 

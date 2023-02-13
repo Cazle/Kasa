@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.divCollapse{
-    margin: 4% auto 4% auto;
-    width: 90%;
+.collapse_about{
+    width: 85%;
+    margin: 3% auto 3% auto;
 }
-.collapse{
+
+.collapse_about .content{
+    color: #f66060;
+    font-size: 24px;
+}
+.box_collapse{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
+}
+.collapse_description {
+    width: 48%;
+    margin-right: 4%;
     color: #f66060;
 }
+.collapse_equipement{
+    width: 48%;
+    color: #f66060;
+}
+.collapse_description span{
+   font-size: 18px;
+}
+.collapse_equipement span{
+    font-size: 18px;
+}
+.box_collapse .content{
+    font-size: 18px;
+    padding: 3% 1% 3% 3%;
+}
+
 .button_style{
     font-family: 'Montserrat';
     width: 100%;
@@ -39,24 +59,54 @@
 }
 
 @media (max-width: 992px){
-   .divCollapse{
-    width: 80%;
+    
+    .collapse_about button{
+        font-size: 18px;
+    }
+
+    .collapse_about{
+    width: 100%;
    }
-   .content{
-    font-size: 16px;
+   .collapse_about .content{
+    font-size: 18px;
+   }
+  .box_collapse .content{
+    font-size: 15px;
 }
-  .collapse button{
-    font-size: 17px;
+  .box_collapse span{
+    font-size: 16px;
 }
 }
 @media (max-width: 768px){
-    .divCollapse{
-        width: 85%;
+    .collapse_description {
+        width: 100%;
+        margin-bottom: 4%;
+     }
+    .collapse_equipement{
+        width: 100%;
     }
-    .content{
+    .collapse_equipement span{
+        font-size: 13px;
+    }
+    .collapse_description span{
+        font-size: 13px;
+    }
+    .collapse_description .button_style{
+        height: 30px;
+    }
+    .collapse_equipement .button_style{
+        height: 30px;
+    }
+    .box_collapse{
+        display: inline;
+    }
+    .box_collapse .content{
         font-size: 12px;
     }
-    .collapse button{
+    .collapse_about .content{
+        font-size: 12px;
+    }
+    .collapse_about button{
         font-size: 13px;
         height: 30px;
     }

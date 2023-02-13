@@ -1,22 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-.box_collapse{
-    display: flex;
-    width: 100%;
-}
-.collapse_description{
-width: 50%;
-}
-.collapse_description div{
-    font-size: 16px;
-}
-.collapse_equipement{
-width: 50%;
-}
-.collapse_equipement div{
-    font-size: 16px;
-}
-
 .box_tag_rating{
     display: flex;
     justify-content: space-between;

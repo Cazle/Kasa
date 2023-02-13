@@ -10,7 +10,7 @@ function Ratings ({rating}) {
         <div className={styles.star_rating}>
             {stars.map((i) =>{
                 return(
-                    <img src={i > rating ? EmptyStar : FullStar} alt='' />
+                    <img key={i} src={i > rating ? EmptyStar : FullStar} alt='' />
                 )
             })}
         </div>

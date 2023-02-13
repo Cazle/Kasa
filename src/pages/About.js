@@ -2,6 +2,7 @@ import { Component } from 'react'
 import BannerAbout from '../componenents/Banner_About/Banner_About'
 import Collapse from '../componenents/Collapse/Collapse'
 import datas_about from '../datas/About_datas'
+import styles from '../componenents/Collapse/Collapse.module.css'
 
 
 
@@ -17,6 +18,7 @@ class About extends Component{
                         key={i}
                         title={data.title}
                         description={data.description} 
+                        className={styles.collapse_about}
                         />
                     )
                 })}

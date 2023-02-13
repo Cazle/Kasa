@@ -61,15 +61,15 @@ main img{
 @media (max-width :992px){
     main img{
         height: 170px;
-        margin-bottom: 5%;
+        margin-bottom: 7%;
     }
     .main_banner{
         font-size: 40px;
-        margin-top: -150px;
+        margin-top: -160px;
     }
 
     .container{
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .card{
         width: 45%;
@@ -102,7 +102,7 @@ main img{
     }
     .container{
         background-color: white;
-        margin-top: 50px;
+        margin-top: 12%;
     }
 }
 @media (max-width :420px){
@@ -111,7 +111,6 @@ main img{
         margin-top: 20px;
     }
     .main_banner{
-
         margin-left: 5%;
     }
     .container{

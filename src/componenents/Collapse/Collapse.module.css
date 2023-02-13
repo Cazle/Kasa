@@ -2,7 +2,6 @@
 
 article{
     margin: 4% auto 4% auto;
-    width: 80%;
 }
 .collapse{
     display: flex;
@@ -13,7 +12,7 @@ article{
 }
 .collapse button{
     font-family: 'Montserrat';
-    width: 100%;
+    width: 80%;
     border: none;
     padding: 0 1% 0 1%;
     height: 47px;
@@ -29,7 +28,7 @@ article{
     background-color: #f66060;
 }
 .content{
-    width: 95%;
+    width: 75%;
     height: auto;
     padding: 2% 2% 2% 3%;
     background-color: #F6F6F6;

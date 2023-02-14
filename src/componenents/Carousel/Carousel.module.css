@@ -53,6 +53,10 @@
     }
 }
 @media (max-width: 768px){
+    .carousel_image{
+        margin-top: 4%;
+        border-radius: 10px;
+    }
     .leftArrow{
         font-size: 45px;
     }

@@ -1,17 +1,14 @@
-import styles from '../BannerAndCard/BannerAndCard.module.css'
-import Banner from '../../assets/banner_frontpage.png'
+import styles from '../Card/Card.module.css'
 import {Logements} from '../../datas/Logements'
 import { Link } from 'react-router-dom'
 
 
-function BannerAndCard(){
+function Card(){
     
     
     
     return(
         <main>
-            <img src={Banner} alt='Bannière'></img>
-            <h2 className={styles.main_banner}>Chez vous, partout et ailleurs</h2>
             <section className={styles.container}>
                 {
                     Logements.map(logement =>{
@@ -28,4 +25,4 @@ function BannerAndCard(){
     )
 }
 
-export default BannerAndCard
+export default Card

@@ -1,12 +1,15 @@
 import { Component } from "react";
-import BannerAndCard from "../componenents/BannerAndCard/BannerAndCard";
+import Card from "../componenents/Card/Card";
+import BannerHome from '../componenents/Banner_Home/BannerHome'
+
 
 
 class Home extends Component{
     render(){
         return(
             <>
-                <BannerAndCard />
+                <BannerHome />
+                <Card />
             </>
         );
     }
